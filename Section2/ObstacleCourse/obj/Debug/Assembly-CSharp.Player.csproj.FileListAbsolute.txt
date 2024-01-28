@@ -287,3 +287,5 @@
 /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/obj/Debug/Assembly-CSharp.Player.csproj.CopyComplete
 /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/obj/Debug/Assembly-CSharp.dll
 /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/obj/Debug/Assembly-CSharp.pdb
+/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/Player/Cinemachine.dll
+/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/Player/Cinemachine.pdb

@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/Mover.cs" />
+    <Compile Include="Assets/Scripts/ObjectHit.cs" />
+    <Compile Include="Assets/Scripts/Scorer.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.dll</HintPath>
     </Reference>
@@ -651,6 +653,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -675,3 +675,7 @@
 /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/UnityEditor.TestRunner.pdb
 /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/UnityEngine.TestRunner.pdb
 /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/Unity.Settings.Editor.pdb
+/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/Cinemachine.dll
+/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/com.unity.cinemachine.editor.dll
+/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/com.unity.cinemachine.editor.pdb
+/Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section2/ObstacleCourse/Temp/Bin/Debug/Assembly-CSharp/Cinemachine.pdb
