@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Scorer : MonoBehaviour
 {
-    private float score = 0;
+    private int hits = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,7 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        hits++; // increment a hit
         Debug.Log("You've bumped into this thing too many times: ");
     }
 }
