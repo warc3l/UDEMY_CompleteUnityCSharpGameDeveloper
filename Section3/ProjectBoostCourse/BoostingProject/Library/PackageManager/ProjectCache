@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638437840500000000
+      ticks: 638437970710000000
     m_Hash: 2349020075
   m_LockFileStatus:
     m_FilePath: /Users/marcelvilaltaisoler/Projects/UDEMY/UDEMY_CompleteUnityCSharpGameDeveloper/Section3/ProjectBoostCourse/BoostingProject/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638437840500000000
+      ticks: 638437970710000000
     m_Hash: 815515474
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -775,6 +775,7 @@ m_ResolvedPackages:
     - 3.0.5
     - 3.0.6
     - 3.0.7
+    - 3.0.8
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -788,6 +789,7 @@ m_ResolvedPackages:
     compatible:
     - 3.0.6
     - 3.0.7
+    - 3.0.8
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -796,7 +798,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.6
     - 3.2.0-pre.7
     - 3.2.0-pre.8
-    verified: 3.0.7
+    verified: 3.0.8
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
