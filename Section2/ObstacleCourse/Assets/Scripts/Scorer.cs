@@ -21,7 +21,10 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        hits++; // increment a hit
-        Debug.Log("You've bumped into this thing too many times: ");
+        if (!other.gameObject.CompareTag("Hit"))
+        {
+            hits++; // increment a hit
+            Debug.Log("You've bumped into this thing too many times: " + hits);
+        }
     }
 }

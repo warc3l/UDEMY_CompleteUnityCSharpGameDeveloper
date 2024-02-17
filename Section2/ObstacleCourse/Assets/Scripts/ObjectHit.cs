@@ -19,7 +19,11 @@ public class ObjectHit : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Entered to collision");
-        GetComponent<MeshRenderer>().material.color = Color.red;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Entered to collision");
+            GetComponent<MeshRenderer>().material.color = Color.red;
+            gameObject.tag = "Hit";
+        }
     }
 }

@@ -354,10 +354,12 @@
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/Dropper.cs"
 "Assets/Scripts/Mover.cs"
 "Assets/Scripts/ObjectHit.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Scorer.cs"
+"Assets/Scripts/Spinner.cs"
 -langversion:9.0
 
 /deterministic
