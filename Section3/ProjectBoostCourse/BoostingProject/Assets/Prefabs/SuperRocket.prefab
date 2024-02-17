@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1272887365754502590}
   - component: {fileID: 7285911119270927061}
   - component: {fileID: 1272887365754502594}
-  - component: {fileID: 1556462403}
   - component: {fileID: 1556462404}
+  - component: {fileID: 1556462403}
   m_Layer: 0
   m_Name: SuperRocket
   m_TagString: Untagged
@@ -212,6 +212,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1556462404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272887365754502591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ad15339b65443098b6b10eebb6d2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 1
+  destroyedRocket: {fileID: 8300000, guid: 14783343623ab4012ae05d7d7f51f8e4, type: 3}
+  successRocket: {fileID: 8300000, guid: 8e42491d8d6d84442bf74f826848bc94, type: 3}
 --- !u!54 &1556462403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -228,18 +243,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!114 &1556462404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272887365754502591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5ad15339b65443098b6b10eebb6d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayTime: 1
-  destroyedRocket: {fileID: 8300000, guid: 14783343623ab4012ae05d7d7f51f8e4, type: 3}
-  successRocket: {fileID: 8300000, guid: 8e42491d8d6d84442bf74f826848bc94, type: 3}

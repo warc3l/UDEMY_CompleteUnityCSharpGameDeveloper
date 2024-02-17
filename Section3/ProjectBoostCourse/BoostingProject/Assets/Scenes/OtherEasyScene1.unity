@@ -283,7 +283,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -377,7 +377,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -463,27 +463,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 26.154, y: 0, z: 0}
---- !u!1 &1556462396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1272887365754502591, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
-  m_PrefabInstance: {fileID: 1272887367017203331}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1556462403
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556462396}
-  serializedVersion: 2
-  m_Mass: 0.2
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 56
-  m_CollisionDetection: 0
 --- !u!1001 &1272887367017203331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -494,10 +473,6 @@ PrefabInstance:
     - target: {fileID: 1272887365754502591, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
       propertyPath: m_Name
       value: SuperRocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 1272887365754502594, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1272887365754502595, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
       propertyPath: m_RootOrder
@@ -542,10 +517,6 @@ PrefabInstance:
     - target: {fileID: 1272887365754502595, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285911119270927061, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
-      propertyPath: rotationThrust
-      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0790e8374774a4bf1a8ea74b2ec71cba, type: 3}
@@ -623,7 +594,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: aa2578cd1106e4f70914f70772695348, type: 2}
     - target: {fileID: 4928626606563758376, guid: cfc19c4163c43447c93656ef20358f62, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4928626606563758376, guid: cfc19c4163c43447c93656ef20358f62, type: 3}
       propertyPath: m_LocalScale.x
@@ -680,7 +651,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6433756618138221681, guid: 2277c15529dd14909a450527f514a0ea, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6433756618138221681, guid: 2277c15529dd14909a450527f514a0ea, type: 3}
       propertyPath: m_LocalPosition.x

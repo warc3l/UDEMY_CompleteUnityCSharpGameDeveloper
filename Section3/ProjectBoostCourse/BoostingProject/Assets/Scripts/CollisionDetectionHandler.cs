@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class CollisionDetectionHandler : MonoBehaviour
 {
+    private bool isTransitioning = false;
     [SerializeField] public float delayTime = 1.0f;
     [SerializeField] private AudioClip destroyedRocket;
     [SerializeField] private AudioClip successRocket;
     private AudioSource audioSource;
-
+    
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -18,35 +19,42 @@ public class CollisionDetectionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Friend")
+        if (!isTransitioning)
         {
-        }
-        else if (other.gameObject.tag == "Fuel")
-        {
+            if (other.gameObject.tag == "Friend")
+            {
+            }
+            else if (other.gameObject.tag == "Fuel")
+            {
             
-        }
-        else if (other.gameObject.tag == "Goal")
-        {
-            // Next Level!w 
-            RocketForward();
-        }
-        else
-        {
-            // Destroy
-            RocketToExplode();
+            }
+            else if (other.gameObject.tag == "Goal")
+            {
+                // Next Level!w 
+                RocketForward();
+            }
+            else
+            {
+                // Destroy
+                RocketToExplode();
+            }
         }
     }
 
     void RocketForward()
     {
+        isTransitioning = true;
         GetComponent<Movement>().enabled = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(successRocket);
         Invoke( "LoadNextLevel", delayTime);
     }
     
     void RocketToExplode()
     {
+        isTransitioning = true;
         GetComponent<Movement>().enabled = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(destroyedRocket);
         Invoke( "ReloadLevel", delayTime);
     }
