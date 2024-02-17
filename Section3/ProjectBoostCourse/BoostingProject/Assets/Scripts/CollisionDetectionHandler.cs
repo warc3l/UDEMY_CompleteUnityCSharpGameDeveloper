@@ -10,6 +10,11 @@ public class CollisionDetectionHandler : MonoBehaviour
     [SerializeField] public float delayTime = 1.0f;
     [SerializeField] private AudioClip destroyedRocket;
     [SerializeField] private AudioClip successRocket;
+
+    [SerializeField] private ParticleSystem successParticles;
+    [SerializeField] private ParticleSystem destroyParticles;
+    
+    
     private AudioSource audioSource;
     
     private void Start()
@@ -44,6 +49,7 @@ public class CollisionDetectionHandler : MonoBehaviour
     void RocketForward()
     {
         isTransitioning = true;
+        successParticles.Play();
         GetComponent<Movement>().enabled = false;
         audioSource.Stop();
         audioSource.PlayOneShot(successRocket);
@@ -53,6 +59,7 @@ public class CollisionDetectionHandler : MonoBehaviour
     void RocketToExplode()
     {
         isTransitioning = true;
+        destroyParticles.Play();
         GetComponent<Movement>().enabled = false;
         audioSource.Stop();
         audioSource.PlayOneShot(destroyedRocket);

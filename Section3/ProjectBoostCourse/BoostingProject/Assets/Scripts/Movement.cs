@@ -13,7 +13,9 @@ public class Movement : MonoBehaviour
     private Rigidbody rb;
     private AudioSource audioSource;
     [SerializeField] private AudioClip mainAudioClip;
-    
+    [SerializeField] private ParticleSystem mainCohetParticles;
+    [SerializeField] private ParticleSystem leftCohetParticles;
+    [SerializeField] private ParticleSystem rightCohetParticles;
     
     // Start is called before the first frame update
     void Start()
@@ -41,10 +43,16 @@ public class Movement : MonoBehaviour
                 // audioSource.Play();
                 audioSource.PlayOneShot(mainAudioClip);
             }
+
+            if (!mainCohetParticles.isPlaying)
+            {
+                mainCohetParticles.Play();
+            }
         }
         else
         {
             audioSource.Stop();
+            mainCohetParticles.Stop();
         }  
     }
 
@@ -55,11 +63,26 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.forward * rotationThrust * Time.deltaTime);
+            if (!rightCohetParticles.isPlaying)
+            {
+                rightCohetParticles.Play();
+            }
         }
         
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
+            rightCohetParticles.Stop();
+
             transform.Rotate(-Vector3.forward * rotationThrust * Time.deltaTime);
+            if (!leftCohetParticles.isPlaying)
+            {
+                leftCohetParticles.Play();
+            }
+        }
+        else
+        {
+            rightCohetParticles.Stop();
+            leftCohetParticles.Stop();
         }
         rb.freezeRotation = false; // unfreezing rotation so we manual rotate
     }
