@@ -893,3 +893,69 @@ Received Import Request.
   path: Assets/Rock.terrainlayer
   artifactKey: Guid(d88b01cba23fb4eb9ac43ad2ca9881a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Rock.terrainlayer using Guid(d88b01cba23fb4eb9ac43ad2ca9881a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4dfb3280a2e2ac93adc2431cf8d453') in 0.008537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 953.765923 seconds.
+  path: Assets/Tree9/bark14.mat
+  artifactKey: Guid(760ea8238d6219c42b2739f693d4c834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/bark14.mat using Guid(760ea8238d6219c42b2739f693d4c834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1850a3300c4357fd83c1d63014b5338') in 0.380238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Tree9/Tree9_2.prefab
+  artifactKey: Guid(be878d9ea17907f4a8068678a5ce7908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Tree9_2.prefab using Guid(be878d9ea17907f4a8068678a5ce7908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc60a4339fc0c69121e3940eea79df79') in 0.788152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Tree9/Leafs19.tga
+  artifactKey: Guid(58552de7d543f6e4095feb3806e56f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Leafs19.tga using Guid(58552de7d543f6e4095feb3806e56f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97dc0f9d7a98882bc3a6ff559d4c7d1') in 0.479138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.156099 seconds.
+  path: Assets/Rusty plane/Model/biplane.FBX
+  artifactKey: Guid(94752ecaf348a44f58849c0dbb76fed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rusty plane/Model/biplane.FBX using Guid(94752ecaf348a44f58849c0dbb76fed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1721158f259f415cd2d1578c8f4439') in 0.491539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.967907 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Fern_C.prefab
+  artifactKey: Guid(4786e2698ac97a949a9209febfcbd49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Fern_C.prefab using Guid(4786e2698ac97a949a9209febfcbd49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da79220b8dd39486d32e103ec079a956') in 0.010048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.203520 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_B.prefab
+  artifactKey: Guid(7b3e6db10d22f504dbc606110b2cb5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_B.prefab using Guid(7b3e6db10d22f504dbc606110b2cb5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3096596cdeccde08a56438f1e4024ad4') in 0.007961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.218237 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_D.prefab
+  artifactKey: Guid(4dfd50a1f648e984f8188be70774f281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_D.prefab using Guid(4dfd50a1f648e984f8188be70774f281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23b5afc3fdf43ba54be539f1a5076a7') in 0.007956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.253548 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/GrassDry_B.prefab
+  artifactKey: Guid(3d4dd2affe15db043a6502ae256cd0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/GrassDry_B.prefab using Guid(3d4dd2affe15db043a6502ae256cd0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c3836a9bdd37aa484f283dd617cbe4') in 0.006643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.241058 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Heather_A.prefab
+  artifactKey: Guid(cce04f533c148314abf74aff71206ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Heather_A.prefab using Guid(cce04f533c148314abf74aff71206ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51977ec88e5ccd24265aaddd8eb78dc7') in 0.010811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.153357 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Plant_A.prefab
+  artifactKey: Guid(6d6ea10f03c4d7245a66d6515bf1bc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Plant_A.prefab using Guid(6d6ea10f03c4d7245a66d6515bf1bc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a3e2d21ddd3a83c11d1d89eefa8497') in 0.010251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.213464 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Plant_C.prefab
+  artifactKey: Guid(d9246f89c4014f749b69f6e963372434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Plant_C.prefab using Guid(d9246f89c4014f749b69f6e963372434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5520471655c072165af9c1b4f1e70208') in 0.006522 seconds 

@@ -797,3 +797,135 @@ Received Import Request.
   path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light.png
   artifactKey: Guid(397fff6c3885f8343bb65714f0064b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light.png using Guid(397fff6c3885f8343bb65714f0064b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d2e0f07e8fb649989d0dfa6a1d18f6') in 0.003254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1204.996139 seconds.
+  path: Assets/Tree9/bark14.png
+  artifactKey: Guid(78e60ad3a8152ec46be748bb6d5a7cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/bark14.png using Guid(78e60ad3a8152ec46be748bb6d5a7cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a09e6932fc2da06af2afb835e54f06') in 0.004605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Tree9/bark14_N.png
+  artifactKey: Guid(81f1d63919f88a547a8d97fe857cc586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/bark14_N.png using Guid(81f1d63919f88a547a8d97fe857cc586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd739ba6aaf57fbc27512d710a9b329b5') in 0.003685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tree9/Tree9_Leaf.fbx
+  artifactKey: Guid(1de95aafaed1b594b88a317c6a6ac028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Tree9_Leaf.fbx using Guid(1de95aafaed1b594b88a317c6a6ac028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2af075cfc110996f7539c6d956c691') in 0.494885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tree9/Leafs19_N.png
+  artifactKey: Guid(fa41cc63b7bd56f4da64009c1c218880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Leafs19_N.png using Guid(fa41cc63b7bd56f4da64009c1c218880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355100dc8321c2e9083fb419ca3270a7') in 0.004419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Tree9/Tree9_3.prefab
+  artifactKey: Guid(8b2d47fdc2e25ac4f9721480a68bbefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Tree9_3.prefab using Guid(8b2d47fdc2e25ac4f9721480a68bbefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bacc4a478783d55ab6b211d89bbb0c1e') in 0.594560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Tree9/Tree9_leafs.mat
+  artifactKey: Guid(da780beb78a91484aa965294e12f428e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Tree9_leafs.mat using Guid(da780beb78a91484aa965294e12f428e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a0178c109e4332e6df0359d4e2c8a7') in 0.030730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Tree9/Tree9_5.prefab
+  artifactKey: Guid(9b8fc966f95ea9c4194dc091fc40b478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Tree9_5.prefab using Guid(9b8fc966f95ea9c4194dc091fc40b478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82248fb356d2187a848cabd20067990') in 0.019924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Tree9/Tree9_4.prefab
+  artifactKey: Guid(956bd2acf7aae244dac8fc20cf57858d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree9/Tree9_4.prefab using Guid(956bd2acf7aae244dac8fc20cf57858d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff3112d5bfe57a4865fbe79b4154d43') in 0.022978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.613728 seconds.
+  path: Assets/Rusty plane/Prefabs/biplane.prefab
+  artifactKey: Guid(ede375fa023cef64cbef944cb32947b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rusty plane/Prefabs/biplane.prefab using Guid(ede375fa023cef64cbef944cb32947b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfa0fa0fc3d9deecf56cdb959657a4f') in 0.332494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/BushDry_A.prefab
+  artifactKey: Guid(176a42107ce66c44aa74a67424591597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/BushDry_A.prefab using Guid(176a42107ce66c44aa74a67424591597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c9b916da3a70145ebdea863dc903c5') in 0.018454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Bush_A.prefab
+  artifactKey: Guid(0ec1c69bd47ad864f96cc2b516f6cd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Bush_A.prefab using Guid(0ec1c69bd47ad864f96cc2b516f6cd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84bb0715558cc7e8d8f013571682060f') in 0.008949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Bush_B.prefab
+  artifactKey: Guid(b273de0d6e5818a4cb3195ce4f376ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Bush_B.prefab using Guid(b273de0d6e5818a4cb3195ce4f376ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383b27db68542a67163a9becba68506a') in 0.005927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Fern_B.prefab
+  artifactKey: Guid(5e7ace55a7bfd0d4f9ba3c05024e9d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Fern_B.prefab using Guid(5e7ace55a7bfd0d4f9ba3c05024e9d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7689b9f5a6740bb53377649a2083bd24') in 0.011185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/BushDry_B.prefab
+  artifactKey: Guid(054bf5cf244ff2e4083cbf8eca205cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/BushDry_B.prefab using Guid(054bf5cf244ff2e4083cbf8eca205cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae586624245a3616cae9bf8e4e10de6') in 0.007478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Fern_A.prefab
+  artifactKey: Guid(6629880e46886724fa0107d3035304e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Fern_A.prefab using Guid(6629880e46886724fa0107d3035304e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df543a95ebf1b8bb64cc305204b62e2f') in 0.006066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.054955 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_A.prefab
+  artifactKey: Guid(4e6885e0d11bd224fa27617a4657c329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_A.prefab using Guid(4e6885e0d11bd224fa27617a4657c329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520e9906e3891a0f7bcf1625f01d3c67') in 0.010752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.203229 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_C.prefab
+  artifactKey: Guid(4c72217d56dcb6749a897a75cad1f34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_C.prefab using Guid(4c72217d56dcb6749a897a75cad1f34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a4b0bb9659d27a3b1ee890d9b79214') in 0.012650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.213586 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/GrassDry_A.prefab
+  artifactKey: Guid(9e8508e3025d9c844810b83c5607c09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/GrassDry_A.prefab using Guid(9e8508e3025d9c844810b83c5607c09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6a9666f82b692bbbfad23890a40fa7') in 0.007344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.254414 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/GrassDry_C.prefab
+  artifactKey: Guid(8aa8def6286fc784ba128570ec475974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/GrassDry_C.prefab using Guid(8aa8def6286fc784ba128570ec475974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0014f7044e37b97dae2cef1cfdf0ac88') in 0.005791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.241905 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Heather_B.prefab
+  artifactKey: Guid(dd902ff2a6f685041be127af00c09664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Heather_B.prefab using Guid(dd902ff2a6f685041be127af00c09664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd7f3fd1e07f2b313a9de21e30c2080') in 0.009709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.154774 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Plant_B.prefab
+  artifactKey: Guid(0a701dc0b49cb264c88918e012866821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Plant_B.prefab using Guid(0a701dc0b49cb264c88918e012866821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38dfc07b0ad065db08748c77e5ba8cd2') in 0.008898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.215128 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Plant_D.prefab
+  artifactKey: Guid(8569bec78272c564ab74ca5b8a4762f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Plant_D.prefab using Guid(8569bec78272c564ab74ca5b8a4762f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef06fe4be4864e20c9e28b0de6fa5096') in 0.005442 seconds 
