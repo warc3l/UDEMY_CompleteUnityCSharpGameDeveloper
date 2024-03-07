@@ -217,6 +217,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &669083983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3536296581598056796, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
+  m_PrefabInstance: {fileID: 871302796955900384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &943734500
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +418,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1170779606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8619523839630524149, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
+  m_PrefabInstance: {fileID: 871302796955900384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1739793607 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 871302798693596455, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
@@ -526,6 +536,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 359.9907
       objectReference: {fileID: 0}
+    - target: {fileID: 3153782227169613841, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
+      propertyPath: lasersObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153782227169613841, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
+      propertyPath: lasersObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1170779606}
+    - target: {fileID: 3153782227169613841, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
+      propertyPath: lasersObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 669083983}
     - target: {fileID: 3536296581598056795, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.39

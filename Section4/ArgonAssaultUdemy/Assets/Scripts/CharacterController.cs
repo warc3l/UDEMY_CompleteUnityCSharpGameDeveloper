@@ -6,18 +6,21 @@ public class CharacterController : MonoBehaviour
 {
     // Where is the player located right now
     // How can I move the player
+    [Header("General Setup Settings from the Ship")]
+    [Tooltip("Speed and Pitch/Yaw")]
     [SerializeField] private float justSpeed = 11.0f;
     [SerializeField] private float xRange = 7.0f;
     [SerializeField] private float yRange = 7.0f;
-
     [SerializeField] private float pitchFactorBasedOnThePositionOfTheScreen = -5f;
     [SerializeField] private float controlPitchFactor = -15f;
-    private float xThrow, yThrow;
-
-
     [SerializeField] private float yawFactorBasedOnPositionOfTheScreen = -3f;
     [SerializeField] private float controlRollfactor = -10.0f;
-    
+    private float xThrow, yThrow;
+
+    [Header("Lasers objects")]
+    [Tooltip("Insert here the lasers as particle systems")]
+    [SerializeField] private GameObject[] lasersObjects;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +34,7 @@ public class CharacterController : MonoBehaviour
         FnRotation();
         FnFiring();
     }
-
-
+    
     void FnRotation()
     {
         // It is important to avoid global rotation to avoid "changes on the camera"
@@ -71,14 +73,29 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            Debug.Log("Shooting");
+            foreach (GameObject laser in lasersObjects)
+            {
+                // laser.SetActive(true);
+                EnableEmissionParticles(laser, true);
+            }
         }
         else
         {
-            Debug.Log("Not shooting");
+            foreach (GameObject laser in lasersObjects)
+            {
+                // laser.SetActive(false);
+                EnableEmissionParticles(laser, false);
+            }
         }
             // then print shooting
         // else not
     }
-        
+
+
+    void EnableEmissionParticles(GameObject laser, bool action)
+    {
+        ParticleSystem.EmissionModule emissionParticleSystem = laser.GetComponent<ParticleSystem>().emission;
+        emissionParticleSystem.enabled = action;
+    }
+    
 }
