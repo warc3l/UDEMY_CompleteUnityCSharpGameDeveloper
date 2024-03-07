@@ -502,13 +502,7 @@ MonoBehaviour:
   deathVFX: {fileID: 3200836327345539238, guid: f5f1ec965198a4a54b8b7b87b32c3915, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: bb5bc48dd50924ec891ca1eb35b7864b, type: 3}
   enemyHitLife: 4
-  parent: {fileID: 1022810250}
   scorePerHit: 15
---- !u!4 &1022810250 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 928284480437227039, guid: ae767390b6b5d49ef8285625c1442ff0, type: 3}
-  m_PrefabInstance: {fileID: 928284480891704981}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1170779606 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8619523839630524149, guid: 1507946801bd545b5afab30f5c81a1da, type: 3}
@@ -628,7 +622,6 @@ MonoBehaviour:
   deathVFX: {fileID: 3200836327345539238, guid: f5f1ec965198a4a54b8b7b87b32c3915, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: bb5bc48dd50924ec891ca1eb35b7864b, type: 3}
   enemyHitLife: 4
-  parent: {fileID: 1022810250}
   scorePerHit: 15
 --- !u!1 &1654345286
 GameObject:
@@ -744,7 +737,6 @@ MonoBehaviour:
   deathVFX: {fileID: 3200836327345539238, guid: f5f1ec965198a4a54b8b7b87b32c3915, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: bb5bc48dd50924ec891ca1eb35b7864b, type: 3}
   enemyHitLife: 4
-  parent: {fileID: 1022810250}
   scorePerHit: 15
 --- !u!95 &1739793607 stripped
 Animator:
@@ -1018,6 +1010,10 @@ PrefabInstance:
     - target: {fileID: 928284480437227036, guid: ae767390b6b5d49ef8285625c1442ff0, type: 3}
       propertyPath: m_Name
       value: Spawn At Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 928284480437227036, guid: ae767390b6b5d49ef8285625c1442ff0, type: 3}
+      propertyPath: m_TagString
+      value: SpawnAtRuntime
       objectReference: {fileID: 0}
     - target: {fileID: 928284480437227039, guid: ae767390b6b5d49ef8285625c1442ff0, type: 3}
       propertyPath: m_RootOrder

@@ -8,7 +8,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject deathVFX;
     [SerializeField] private GameObject hitVFX;
     [SerializeField] private int enemyHitLife = 4;
-    [SerializeField] private Transform parent;
+    //[SerializeField] private Transform parent; // - Use the Inspector to inject a parent, otherwise use FindWithTag
+    private GameObject parentGameObject; // - Use the Inspector to inject a parent, otherwise use FindWithTag
 
     [SerializeField] private int scorePerHit = 15; 
     
@@ -16,6 +17,9 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
+        
+        
         // We can use this SAFELY as we are SURE that we will have ONLY ONE score board
         // It is a resource consuming, and heavier and heavier... but it is fine for now with only one
         scoreDash = FindObjectOfType <ScoringDashboard>();
@@ -28,13 +32,13 @@ public class Enemy : MonoBehaviour
         if (enemyHitLife < 1)
         {
             GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-            vfx.transform.parent = parent;
+            vfx.transform.parent = parentGameObject.transform;
             Destroy(gameObject);
         }
         else
         {
             GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
-            vfx.transform.parent = parent;
+            vfx.transform.parent = parentGameObject.transform;
         }
     }
 
