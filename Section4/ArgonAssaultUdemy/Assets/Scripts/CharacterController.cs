@@ -29,6 +29,7 @@ public class CharacterController : MonoBehaviour
     {
         FnTranslation();
         FnRotation();
+        FnFiring();
     }
 
 
@@ -65,4 +66,19 @@ public class CharacterController : MonoBehaviour
             clampedPosY, 
             transform.localPosition.z);
     }
+
+    void FnFiring()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            Debug.Log("Shooting");
+        }
+        else
+        {
+            Debug.Log("Not shooting");
+        }
+            // then print shooting
+        // else not
+    }
+        
 }
