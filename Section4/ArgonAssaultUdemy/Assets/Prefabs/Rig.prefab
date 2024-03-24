@@ -145,6 +145,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 871302798693596454}
     m_Modifications:
+    - target: {fileID: 4132702943964490094, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132702943964490094, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5956083649167658958, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -192,6 +200,14 @@ PrefabInstance:
     - target: {fileID: 6477181394611524980, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211988985534105287, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211988985534105287, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b369568d24a04499b7d91f7c2769e79, type: 3}

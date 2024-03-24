@@ -17,6 +17,12 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        
+        // Add the rigid body 
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        // GetComponent<Rigidbody>().useGravity = false;
+        rb.useGravity = false;
+        
         parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
         
         
