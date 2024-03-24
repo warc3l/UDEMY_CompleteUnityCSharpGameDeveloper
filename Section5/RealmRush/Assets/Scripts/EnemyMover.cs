@@ -1,16 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private List<Waypoint> path = new List<Waypoint>();
-    [SerializeField] [Range(0f, 5f)] private float speed = 1f;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] [Range(0f, 5f)] private float speed = 2f;
+
+    //void Start()
+    void OnEnable() 
     {
-        ImprimirWaypoints();
-        StartCoroutine(PrintWaypoint());
+        //ImprimirWaypoints();
+        FindPath();
+        ReturnToStart();
+        StartCoroutine(MoveInPath());
+    }
+
+    void FindPath()
+    {
+        path.Clear();
+        //GameObject[] waypointsWorld = GameObject.FindGameObjectsWithTag("Path");
+        //foreach(GameObject waypoint in waypointsWorld)
+
+        GameObject parent = GameObject.FindGameObjectWithTag("Path");
+        foreach(Transform child in parent.transform)
+        {
+            path.Add(child.GetComponent<Waypoint>());
+            Debug.Log("Just added: " + child.name);
+        }
+        //ImprimirWaypoints();
     }
 
     void ImprimirWaypoints()
@@ -21,7 +41,7 @@ public class EnemyMover : MonoBehaviour
         }
     }
 
-    IEnumerator PrintWaypoint()
+    IEnumerator MoveInPath()
     {
         foreach (Waypoint waypoint in path)
         {
@@ -37,8 +57,17 @@ public class EnemyMover : MonoBehaviour
             }
             // Debug.Log(waypoint.name);
             //transform.position = waypoint.transform.position;
-            //yield return new WaitForSeconds(waitTime);
+            //yield return new WaitForSeconds(1.0f);
+            // Destroy(gameObject);
         }
+        
+        
+        gameObject.SetActive(false);
+    }
+
+    void ReturnToStart()
+    {
+        transform.position = path[0].transform.position;
     }
     
     

@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1351322603535416238, guid: 82f109dde0e644c7b9e9511352d1f334, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7124634229888223227, guid: 82f109dde0e644c7b9e9511352d1f334, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -57,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7997941815996911709, guid: 82f109dde0e644c7b9e9511352d1f334, type: 3}
       propertyPath: m_Name
-      value: Tile Variant
+      value: Tile_Corner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82f109dde0e644c7b9e9511352d1f334, type: 3}

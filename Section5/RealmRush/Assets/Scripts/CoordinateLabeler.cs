@@ -9,8 +9,10 @@ using UnityEngine;
 [ExecuteAlways]
 public class CoordinateLabeler : MonoBehaviour
 {
+    [SerializeField] private Color defaultColor = Color.black;
+    [SerializeField] private Color blockedColor = Color.blue;
     private TextMeshPro label;
-    
+    private Waypoint waypoint;
     
     // We can get the world coordinate
     private Vector2Int coordinates = new Vector2Int();
@@ -18,6 +20,7 @@ public class CoordinateLabeler : MonoBehaviour
     private void Awake()
     {
         label = GetComponent<TextMeshPro>();
+        waypoint = GetComponentInParent<Waypoint>();
         MostraCoordenadesEnEditMode();
     }        
     
@@ -29,9 +32,26 @@ public class CoordinateLabeler : MonoBehaviour
             MostraCoordenadesEnEditMode();
             ActualitzaNom();
         }
+        
+        // Color coordinates
+        ColorCoordinates();
+        ToggleColors();
+
     }
 
+    void ToggleColors()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            label.enabled = !label.IsActive();
+        }
+    }
 
+    private void ColorCoordinates()
+    {
+        label.color = waypoint.IsPlaceable ? defaultColor : blockedColor;
+    }
+    
     void MostraCoordenadesEnEditMode()
     {
         coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
