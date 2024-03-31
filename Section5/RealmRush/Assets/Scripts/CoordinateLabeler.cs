@@ -11,8 +11,16 @@ public class CoordinateLabeler : MonoBehaviour
 {
     [SerializeField] private Color defaultColor = Color.black;
     [SerializeField] private Color blockedColor = Color.blue;
+
+    // Using the GridManager...:
+    [SerializeField] private Color exploredColor = Color.yellow;
+    [SerializeField] private Color pathColor = new Color(1f, 0.5f, 0f); // orange
+    
     private TextMeshPro label;
-    private Waypoint waypoint;
+    private Tile _tile;
+
+    private GridManager gridManager;
+    
     
     // We can get the world coordinate
     private Vector2Int coordinates = new Vector2Int();
@@ -20,7 +28,12 @@ public class CoordinateLabeler : MonoBehaviour
     private void Awake()
     {
         label = GetComponent<TextMeshPro>();
-        waypoint = GetComponentInParent<Waypoint>();
+        _tile = GetComponentInParent<Tile>();
+        
+        // Using a GridManager and not Waypoint
+        gridManager = FindObjectOfType<GridManager>();
+        
+        
         MostraCoordenadesEnEditMode();
     }        
     
@@ -31,6 +44,7 @@ public class CoordinateLabeler : MonoBehaviour
         {
             MostraCoordenadesEnEditMode();
             ActualitzaNom();
+            label.enabled = true;
         }
         
         // Color coordinates
@@ -49,13 +63,43 @@ public class CoordinateLabeler : MonoBehaviour
 
     private void ColorCoordinates()
     {
-        label.color = waypoint.IsPlaceable ? defaultColor : blockedColor;
+        if (gridManager == null) return;
+        Node node = gridManager.GetNode(coordinates);
+
+        if (node == null) { Debug.Log("null null null for: " + coordinates); return;}
+        
+        if (!node.isWalkable)
+        {
+            label.color = blockedColor;
+        } else if (node.isPath)
+        {
+            label.color = pathColor;
+        } else if (node.isExplored)
+        {
+            label.color = exploredColor;
+        }
+        else
+        {
+            label.color = defaultColor;
+        }
+
+
+        return; // We are using GridManager. Remove to use Waypoints.
+        label.color = _tile.IsPlaceable ? defaultColor : blockedColor;
     }
     
     void MostraCoordenadesEnEditMode()
     {
-        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
-        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z); 
+        if (gridManager == null) return;
+        
+        
+        // coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
+        // coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z); 
+
+        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / gridManager.UnityGridSize);
+        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / gridManager.UnityGridSize); 
+
+        
         label.text = coordinates.x + "," + coordinates.y;
     }
 
