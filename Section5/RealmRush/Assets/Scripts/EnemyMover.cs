@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private List<Waypoint> path = new List<Waypoint>();
@@ -67,14 +68,19 @@ public class EnemyMover : MonoBehaviour
             //yield return new WaitForSeconds(1.0f);
             // Destroy(gameObject);
         }
-        
-        enemy.StealGold();
-        gameObject.SetActive(false);
+
+        FinishPath();
     }
 
     void ReturnToStart()
     {
         transform.position = path[0].transform.position;
+    }
+
+    void FinishPath()
+    {
+        enemy.StealGold();
+        gameObject.SetActive(false);
     }
     
     
