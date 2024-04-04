@@ -27,6 +27,20 @@ public class PathFinder : MonoBehaviour
     private Dictionary<Vector2Int, Node> grid = new Dictionary<Vector2Int, Node>();
 
 
+    public Vector2Int EndCoordinates
+    {
+        get
+        {
+            return endCoordinates;
+        }
+    }
+    
+    public Vector2Int StartCoordinates
+    {
+        get { return startCoordinates;  }
+    }
+
+
 
     private void Awake()
     {
@@ -34,10 +48,12 @@ public class PathFinder : MonoBehaviour
         if (_gridManager != null)
         {
             grid = _gridManager.Grid;
+            startNode = grid[startCoordinates];
+            endNode = grid[endCoordinates];
         }
 
-        startNode = new Node(startCoordinates, true);
-        endNode = new Node(endCoordinates, true);
+        //startNode = new Node(startCoordinates, true);
+        //endNode = new Node(endCoordinates, true);
     }
 
     private void Start()
@@ -83,6 +99,9 @@ public class PathFinder : MonoBehaviour
 
     private void BFS()
     {
+        startNode.isWalkable = true;
+        endNode.isWalkable = true;
+        
         frontNodes.Clear(); // Clear the bFS
         reached.Clear();
         
