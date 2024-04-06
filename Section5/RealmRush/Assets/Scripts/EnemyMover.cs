@@ -22,9 +22,9 @@ public class EnemyMover : MonoBehaviour
     void OnEnable() 
     {
         //ImprimirWaypoints();
-        FindPath();
-        ReturnToStart();
-        StartCoroutine(MoveInPath());
+        ReturnToStart(); // Back to strat to the start node, and then, calculate the path
+        RecalculatePath(true); 
+        // StartCoroutine(MoveInPath());
     }
 
     //private void Start()
@@ -35,11 +35,10 @@ public class EnemyMover : MonoBehaviour
         gridManager = FindObjectOfType<GridManager>();
     }
 
-    void FindPath()
+    void RecalculatePath() // We can easily remove this method
     {
-        path.Clear();
-        path = pathFinder.GetNewPath();
-        
+        // path.Clear();
+        // path = pathFinder.GetNewPath();
         
         //GameObject[] waypointsWorld = GameObject.FindGameObjectsWithTag("Path");
         //foreach(GameObject waypoint in waypointsWorld)
@@ -60,10 +59,29 @@ public class EnemyMover : MonoBehaviour
             Debug.Log(waypoint.coordinates);
         }
     }
+    
+    void RecalculatePath(bool resetPath)
+    {
+        Vector2Int coordinates = new Vector2Int();
+        if (resetPath)
+        {
+            coordinates = pathFinder.StartCoordinates;
+        }
+        else
+        {
+            coordinates = gridManager.GetCoordinatesFromPosition(transform.position);
+        }
+
+        StopAllCoroutines();
+        path.Clear();
+        path = pathFinder.GetNewPath(coordinates);
+        StartCoroutine(MoveInPath());
+    }
+
 
     IEnumerator MoveInPath()
     {
-        for (int i = 0; i < path.Count; i++)
+        for (int i = /*0*/ 1; i < path.Count; i++)
         {
             Vector3 startPosition = transform.position;
             Vector3 endPosition = gridManager.GetPositionFromCoordinates(path[i].coordinates); // waypoint.transform.position;

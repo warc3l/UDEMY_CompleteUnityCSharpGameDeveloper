@@ -62,13 +62,22 @@ public class PathFinder : MonoBehaviour
         GetNewPath();
     }
 
-    public List<Node> GetNewPath()
+
+    public List<Node> GetNewPath(Vector2Int coordinates)
     {
         _gridManager.ResetNodes();
-        BFS();
+        BFS(coordinates);
         return BuildPath();
     }
-    
+
+    public List<Node> GetNewPath()
+    {
+        return GetNewPath(startCoordinates);
+
+        // _gridManager.ResetNodes();
+        // BFS(startCoordinates); // or BFS()
+        // return BuildPath();
+    }
     
     void ExploreNeighs()
     {
@@ -97,7 +106,8 @@ public class PathFinder : MonoBehaviour
         }
     }
 
-    private void BFS()
+
+    private void BFS(Vector2Int coordinates)
     {
         startNode.isWalkable = true;
         endNode.isWalkable = true;
@@ -106,8 +116,8 @@ public class PathFinder : MonoBehaviour
         reached.Clear();
         
         bool isRunning = true;
-        frontNodes.Enqueue(startNode);
-        reached.Add(startCoordinates, startNode);
+        frontNodes.Enqueue(grid[coordinates]);
+        reached.Add(coordinates, grid[coordinates]);
 
 
         while (frontNodes.Count > 0 && isRunning)
@@ -120,9 +130,14 @@ public class PathFinder : MonoBehaviour
                 isRunning = false;
             }
         }
+
     }
-
-
+    
+    private void BFS()
+    {
+        BFS(startCoordinates);
+    }
+    
     private List<Node> BuildPath()
     {
         List<Node> cami = new List<Node>();
@@ -133,7 +148,7 @@ public class PathFinder : MonoBehaviour
 
         while (currentNode.connectedTo != null)
         {
-            Debug.Log("Constructing thepath....");
+            // Debug.Log("Constructing thepath....");
             currentNode = currentNode.connectedTo;
             cami.Add(currentNode);
             currentNode.isPath = true;
@@ -153,16 +168,23 @@ public class PathFinder : MonoBehaviour
             List<Node> newPath = GetNewPath();
             grid[coordinates].isWalkable = previousState;
 
+            Debug.Log("Size of the newPath: " + newPath.Count);
+            
             if (newPath.Count <= 1)
             {
                 GetNewPath();
                 return true;
             }
-
-            return false;
         }
-
+        Debug.Log("Grid contains key coordinates: " + grid.ContainsKey(coordinates));
         return false;
     }
+
+    public void NotifyReceivers()
+    {
+        // We are going to recalculate the message. 
+        BroadcastMessage("RecalculatePath", false, SendMessageOptions.DontRequireReceiver); 
+    }
+    
     
 }

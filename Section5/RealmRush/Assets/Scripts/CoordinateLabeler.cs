@@ -66,7 +66,7 @@ public class CoordinateLabeler : MonoBehaviour
         if (gridManager == null) return;
         Node node = gridManager.GetNode(coordinates);
 
-        if (node == null) { Debug.Log("null null null for: " + coordinates); return;}
+        if (node == null) { return;}
         
         if (!node.isWalkable)
         {

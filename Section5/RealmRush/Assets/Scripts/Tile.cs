@@ -43,13 +43,19 @@ public class Tile : MonoBehaviour
     
     private void OnMouseDown()
     {
-        if (/* isPlaceable*/ gridManager.GetNode(coordinates).isWalkable && pathFinder.WillBlockThePath(coordinates) ) {
-            Debug.Log(name);
-            bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
+        Debug.Log("Clicked Mouse!: " + gridManager.GetNode(coordinates).isWalkable + " && " + !pathFinder.WillBlockThePath(coordinates));
+        if (/* isPlaceable*/ gridManager.GetNode(coordinates).isWalkable && !pathFinder.WillBlockThePath(coordinates) ) {
+            // Debug.Log(name);
+            bool isSuccessful = towerPrefab.CreateTower(towerPrefab, transform.position);
             // Instantiate(towerPrefab, transform.position, Quaternion.identity);
-            isPlaceable = !isPlaced;
-            
-            gridManager.BlockNode(coordinates);
+            // isPlaceable = !isPlaced; // Commenting, not specifically purpose
+            if (isSuccessful)
+            {
+                gridManager.BlockNode(coordinates);
+                // We need to request the EnemyMover to RE-CALCULATE the path.
+                // We are going to use a BroadcastMessage.
+                pathFinder.NotifyReceivers();
+            }
         }
     }
 }
