@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1964419039823102581}
   - component: {fileID: 1964419039823102580}
   - component: {fileID: 1964419039823102539}
+  - component: {fileID: 8972310137135046704}
   - component: {fileID: 1964419039823102538}
   - component: {fileID: 1964419039823102582}
   - component: {fileID: 1964419039823102583}
@@ -87,6 +88,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8972310137135046704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964419039823102537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684776c9268d64f21acd9057b46c6896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &1964419039823102538
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -115,7 +128,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -136,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  saveDistance: 5
+  saveDistance: 2
 --- !u!1 &4694116742095248803
 GameObject:
   m_ObjectHideFlags: 0

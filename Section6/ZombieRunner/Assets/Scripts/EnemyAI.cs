@@ -13,19 +13,51 @@ public class EnemyAI : MonoBehaviour
     private float distanceToFriend = Mathf.Infinity;
     private NavMeshAgent navMeshAgent;
 
+    private bool isProvoked = false;
+    
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
+   
+    private void EngageTarget()
+    {
+        if (distanceToFriend >= navMeshAgent.stoppingDistance)
+        {
+            ChaseTarget();
+        }
 
+        if (distanceToFriend <= navMeshAgent.stoppingDistance)
+        {
+            AttackTarget();
+        }
+    }
+
+    void ChaseTarget()
+    {
+        navMeshAgent.SetDestination(target.position);
+    }
+    
+    void AttackTarget()
+    {
+        Debug.Log(name + " attacking " + target.name);
+    }
+    
     void Update()
     {
         distanceToFriend = Vector3.Distance(target.position, transform.position);
-        if (distanceToFriend < saveDistance)
+        
+        if (isProvoked)
         {
+            EngageTarget();
+        } 
+        else if (distanceToFriend <= saveDistance)
+        {
+            isProvoked = true;
             navMeshAgent.SetDestination(target.position);
         }
     }
+    
 
     private void OnDrawGizmosSelected()
     {
