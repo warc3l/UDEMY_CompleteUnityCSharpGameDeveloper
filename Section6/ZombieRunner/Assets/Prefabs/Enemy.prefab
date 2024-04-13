@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 1964419039823102580}
   - component: {fileID: 1964419039823102539}
   - component: {fileID: 8972310137135046704}
+  - component: {fileID: 843386849944737599}
   - component: {fileID: 1964419039823102538}
   - component: {fileID: 1964419039823102582}
   - component: {fileID: 1964419039823102583}
+  - component: {fileID: 2395462930412504710}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -100,6 +102,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684776c9268d64f21acd9057b46c6896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &843386849944737599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964419039823102537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16178e1c9a264074ac61d8eb72ee519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 40
 --- !u!136 &1964419039823102538
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -128,7 +144,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -149,7 +165,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  saveDistance: 2
+  saveDistance: 10
+  speed: 0
+--- !u!95 &2395462930412504710
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964419039823102537}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9977a3f2c0a574be6943956deb065322, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4694116742095248803
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +215,7 @@ Transform:
   m_GameObject: {fileID: 4694116742095248803}
   m_LocalRotation: {x: -0.01666595, y: -0.7158233, z: -0.017094608, w: 0.6978733}
   m_LocalPosition: {x: -0.01, y: 0.638, z: 0.67}
-  m_LocalScale: {x: 0.43005, y: 0.043841437, z: 0.12881097}
+  m_LocalScale: {x: 0.43005, y: 0.04384144, z: 0.12881097}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1964419039823102581}

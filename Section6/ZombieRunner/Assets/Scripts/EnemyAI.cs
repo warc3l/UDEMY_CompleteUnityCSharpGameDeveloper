@@ -9,7 +9,9 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] private float saveDistance = 5f;
-
+    [SerializeField] private float speed = 5f;
+    
+    
     private float distanceToFriend = Mathf.Infinity;
     private NavMeshAgent navMeshAgent;
 
@@ -22,6 +24,7 @@ public class EnemyAI : MonoBehaviour
    
     private void EngageTarget()
     {
+        FaceTarget();
         if (distanceToFriend >= navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
@@ -36,11 +39,26 @@ public class EnemyAI : MonoBehaviour
     void ChaseTarget()
     {
         navMeshAgent.SetDestination(target.position);
+        
+        // Need to move from idle state to the move state.
+        GetComponent<Animator>().SetTrigger("move"); // Exactly as it is spelled
     }
     
     void AttackTarget()
     {
         Debug.Log(name + " attacking " + target.name);
+        
+        // Attacking, without Event
+        /*
+        EnemyAttack enemyAttack = GetComponent<EnemyAttack>();
+        if (enemyAttack != null)
+        {
+            enemyAttack.AttackHitEvent();
+        }
+        */
+        
+        // Need to move from move to attack
+        GetComponent<Animator>().SetBool("attack", true);
     }
     
     void Update()
@@ -56,6 +74,13 @@ public class EnemyAI : MonoBehaviour
             isProvoked = true;
             navMeshAgent.SetDestination(target.position);
         }
+    }
+
+    private void FaceTarget()
+    {
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion quaternion = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, quaternion, Time.deltaTime * speed); // Check Slerp method.
     }
     
 
