@@ -41,6 +41,11 @@ public class Ammo : MonoBehaviour
         // ammoAmount = ammoAmount - 1;
         GetSlot(type).ammoAmmount--;
     }
+
+    public void IncreaseAmmo(AmmoType type, int increase)
+    {
+        GetSlot(type).ammoAmmount += increase;
+    }
     
     // Start is called before the first frame update
     void Start()
