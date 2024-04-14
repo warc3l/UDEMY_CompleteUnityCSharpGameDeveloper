@@ -16,10 +16,13 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent navMeshAgent;
 
     private bool isProvoked = false;
+    private EnemyHealth healthEnemy;
+    
     
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        healthEnemy = GetComponent<EnemyHealth>();
     }
    
     private void EngageTarget()
@@ -63,6 +66,12 @@ public class EnemyAI : MonoBehaviour
     
     void Update()
     {
+        if (healthEnemy.Health <= 0) {
+            // The Zombie is super-death.
+            enabled = false; // Let's disable the AI for this enemy, but the NavMesh does not know if it died..
+            navMeshAgent.enabled = false;
+        }
+        
         distanceToFriend = Vector3.Distance(target.position, transform.position);
         
         if (isProvoked)

@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float health = 100f;
+
+    private bool justDieOnce = false;
     
     public float Health
     {
@@ -20,9 +22,17 @@ public class EnemyHealth : MonoBehaviour
             
         // We can use a BroadcastMessage, with the name of the method that we would like to call.
         BroadcastMessage("OnDamageTaken");         
-        if (health <= 0)
+        if (health <= 0 && !justDieOnce)
         {
-            Destroy(gameObject);
+            // Destroy(gameObject);
+            justDieOnce = true;
+            Die();
         }
     }
+
+    private void Die()
+    {
+        GetComponent<Animator>().SetTrigger("die");
+    }
+    
 }
