@@ -30,6 +30,7 @@ public class EnemyAttack : MonoBehaviour
         if (target != null)
         {
             Debug.Log("bang bong");
+            target.GetComponent<DisplayDamage>().ShowDamageImpact();
             target.TakeDamage(damage);
         }
     }
