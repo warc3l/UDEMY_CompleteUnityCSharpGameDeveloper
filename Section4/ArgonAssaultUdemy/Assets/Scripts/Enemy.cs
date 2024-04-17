@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int scorePerHit = 15; 
     
     private ScoringDashboard scoreDash;
-
+    
     void Start()
     {
         
@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
         // We can use this SAFELY as we are SURE that we will have ONLY ONE score board
         // It is a resource consuming, and heavier and heavier... but it is fine for now with only one
         scoreDash = FindObjectOfType <ScoringDashboard>();
+        
     }
 
     private void OnParticleCollision(GameObject other)
@@ -47,7 +48,7 @@ public class Enemy : MonoBehaviour
             vfx.transform.parent = parentGameObject.transform;
         }
     }
-
+    
     private void OnParticleTrigger()
     {
         
